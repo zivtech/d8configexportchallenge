@@ -1,0 +1,21 @@
+uuid: 596531cd-5a9e-4415-9104-85baf8ff55da
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_synopsis
+    - node.type.movie
+  module:
+    - text
+id: node.movie.field_synopsis
+field_name: field_synopsis
+entity_type: node
+bundle: movie
+label: Synopsis
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,45 @@
+uuid: 28941b64-7cfd-4fa1-86e5-1c53ddffb6d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie.field_rating
+    - field.field.node.movie.field_synopsis
+    - node.type.movie
+  module:
+    - path
+    - text
+id: node.movie.default
+targetEntityType: node
+bundle: movie
+mode: default
+content:
+  field_rating:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  field_synopsis:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  path:
+    type: path
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  promote: true
+  sticky: true
+  uid: true

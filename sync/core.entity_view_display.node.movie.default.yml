@@ -1,0 +1,32 @@
+uuid: 2c55a07c-efdc-423f-8534-411614ba3c36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie.field_rating
+    - field.field.node.movie.field_synopsis
+    - node.type.movie
+  module:
+    - options
+    - text
+    - user
+id: node.movie.default
+targetEntityType: node
+bundle: movie
+mode: default
+content:
+  field_rating:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+  field_synopsis:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  links:
+    weight: 100
+hidden: {  }
