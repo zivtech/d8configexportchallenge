@@ -1,0 +1,14 @@
+uuid: 9fdde2d5-c03d-4cba-8cd3-9b5023e99f21
+name: configchallenge
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo
