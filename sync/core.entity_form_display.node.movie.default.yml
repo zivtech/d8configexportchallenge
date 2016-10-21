@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.movie.field_director
+    - field.field.node.movie.field_producer_s_
     - field.field.node.movie.field_rating
+    - field.field.node.movie.field_release_date
     - field.field.node.movie.field_synopsis
     - node.type.movie
   module:
+    - datetime
     - path
     - text
 id: node.movie.default
@@ -22,11 +25,24 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_producer_s_:
+    weight: 27
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   field_rating:
-    weight: 2
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_release_date:
+    weight: 28
     settings: {  }
     third_party_settings: {  }
-    type: options_select
+    type: datetime_default
   field_synopsis:
     weight: 3
     settings:
@@ -48,6 +64,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_director: true
   promote: true
   sticky: true
   uid: true
