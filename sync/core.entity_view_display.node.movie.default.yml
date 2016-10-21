@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.movie.field_director
     - field.field.node.movie.field_rating
     - field.field.node.movie.field_synopsis
     - node.type.movie
@@ -15,18 +16,27 @@ targetEntityType: node
 bundle: movie
 mode: default
 content:
+  field_director:
+    type: string
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_rating:
-    weight: 102
+    weight: 2
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
   field_synopsis:
-    weight: 101
+    weight: 1
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
   links:
-    weight: 100
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }
