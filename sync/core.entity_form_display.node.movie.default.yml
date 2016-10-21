@@ -3,11 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.movie.field_actor_s_
     - field.field.node.movie.field_director
+    - field.field.node.movie.field_producer_s_
     - field.field.node.movie.field_rating
+    - field.field.node.movie.field_release_date
     - field.field.node.movie.field_synopsis
     - node.type.movie
   module:
+    - datetime
     - path
     - text
 id: node.movie.default
@@ -15,20 +19,33 @@ targetEntityType: node
 bundle: movie
 mode: default
 content:
-  field_director:
-    type: string_textfield
-    weight: 1
+  field_actor_s_:
+    weight: 28
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_producer_s_:
+    weight: 27
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
   field_rating:
-    weight: 2
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     type: options_select
+  field_release_date:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
   field_synopsis:
-    weight: 3
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
@@ -36,7 +53,7 @@ content:
     type: text_textarea
   path:
     type: path
-    weight: 4
+    weight: 3
     settings: {  }
     third_party_settings: {  }
   title:
@@ -48,6 +65,7 @@ content:
     third_party_settings: {  }
 hidden:
   created: true
+  field_director: true
   promote: true
   sticky: true
   uid: true

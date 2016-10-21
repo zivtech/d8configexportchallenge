@@ -3,11 +3,15 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.movie.field_actor_s_
     - field.field.node.movie.field_director
+    - field.field.node.movie.field_producer_s_
     - field.field.node.movie.field_rating
+    - field.field.node.movie.field_release_date
     - field.field.node.movie.field_synopsis
     - node.type.movie
   module:
+    - datetime
     - options
     - text
     - user
@@ -16,27 +20,41 @@ targetEntityType: node
 bundle: movie
 mode: default
 content:
-  field_director:
-    type: string
-    weight: 3
+  field_actor_s_:
+    weight: 105
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_producer_s_:
+    weight: 104
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    type: string
   field_rating:
-    weight: 2
+    weight: 102
     label: above
     settings: {  }
     third_party_settings: {  }
     type: list_default
+  field_release_date:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
   field_synopsis:
-    weight: 1
+    weight: 101
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
   links:
-    weight: 0
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+    weight: 100
+hidden:
+  field_director: true
