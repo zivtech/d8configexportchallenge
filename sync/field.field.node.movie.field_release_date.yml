@@ -1,4 +1,4 @@
-uuid: 33a45707-28e2-4f7d-b6e0-a9a369af6f37
+uuid: 40963b8f-e35f-4725-a5c0-ba74a7bbd17c
 langcode: en
 status: true
 dependencies:
@@ -11,9 +11,9 @@ id: node.movie.field_release_date
 field_name: field_release_date
 entity_type: node
 bundle: movie
-label: 'Release Date'
-description: 'Release date of movie.'
-required: false
+label: release_date
+description: ''
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

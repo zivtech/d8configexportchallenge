@@ -16,5 +16,7 @@ content:
     weight: 100
 hidden:
   field_director: true
+  field_producer_s_: true
   field_rating: true
+  field_release_date: true
   field_synopsis: true

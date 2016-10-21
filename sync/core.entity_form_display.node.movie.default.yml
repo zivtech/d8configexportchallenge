@@ -31,7 +31,7 @@ content:
     third_party_settings: {  }
     type: options_select
   field_release_date:
-    weight: 26
+    weight: 28
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
