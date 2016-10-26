@@ -313,6 +313,13 @@ class ComposerStaticInitDrupal8
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
             ),
         ),
+        'G' => 
+        array (
+            'GitWrapper' => 
+            array (
+                0 => __DIR__ . '/..' . '/cpliakas/git-wrapper/src',
+            ),
+        ),
         'E' => 
         array (
             'Egulias\\' => 
