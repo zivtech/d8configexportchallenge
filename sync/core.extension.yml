@@ -11,6 +11,7 @@ module:
   config_devel: 0
   config_files: 0
   config_update: 0
+  config_update_ui: 0
   contact: 0
   contextual: 0
   datetime: 0
