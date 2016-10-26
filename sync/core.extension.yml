@@ -8,6 +8,9 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_devel: 0
+  config_files: 0
+  config_update: 0
   contact: 0
   contextual: 0
   datetime: 0
@@ -15,15 +18,19 @@ module:
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
+  features: 0
+  features_ui: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  git_config: 0
   help: 0
   history: 0
   image: 0
   link: 0
   menu_ui: 0
+  nimbus: 0
   node: 0
   options: 0
   page_cache: 0
