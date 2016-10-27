@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.movie.field_director
+    - field.field.node.movie.field_rating
+    - field.field.node.movie.field_synopsis
+    - node.type.movie
+  module:
+    - user
+id: node.movie.teaser
+targetEntityType: node
+bundle: movie
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  field_director: true
+  field_producer_s_: true
+  field_rating: true
+  field_release_date: true
+  field_synopsis: true
