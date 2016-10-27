@@ -7,6 +7,8 @@ dependencies:
     - node.type.movie
   module:
     - text
+_core:
+  default_config_hash: TJSCJpau7oeezDs-FG57dnnEBPwnR0QwMM6HnK7sjq0
 id: node.movie.field_synopsis
 field_name: field_synopsis
 entity_type: node

@@ -9,6 +9,8 @@ dependencies:
   module:
     - node
     - user
+_core:
+  default_config_hash: YlUb80kLs2zrSlRawOtyukq8NOYA5x40vbHE7Hr0uvc
 id: director
 label: Director
 module: views

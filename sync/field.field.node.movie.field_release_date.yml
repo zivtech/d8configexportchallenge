@@ -7,6 +7,8 @@ dependencies:
     - node.type.movie
   module:
     - datetime
+_core:
+  default_config_hash: _HK1jXgY_bp2b-RvSH_kwQ-Wcu8DkbKIf7u9PNrIWh0
 id: node.movie.field_release_date
 field_name: field_release_date
 entity_type: node

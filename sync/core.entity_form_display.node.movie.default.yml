@@ -13,6 +13,8 @@ dependencies:
     - datetime
     - path
     - text
+_core:
+  default_config_hash: qGq4kSvJ-Am5v8AjWtUmNdYm63tJTjwfTza04aIcS8U
 id: node.movie.default
 targetEntityType: node
 bundle: movie

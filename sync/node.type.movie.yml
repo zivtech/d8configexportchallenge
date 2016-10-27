@@ -9,6 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
+_core:
+  default_config_hash: Xyf-x4BUsyMT2QUa7FqIqMCegx4MH4WaP-if5S0s2eY
 name: Movie
 type: movie
 description: 'Movies are super cool.'

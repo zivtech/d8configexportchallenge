@@ -5,6 +5,8 @@ dependencies:
   module:
     - node
     - text
+_core:
+  default_config_hash: b9_hlOm2l4mapzD2_dofjec0kHEutJrvll6wx6afwt8
 id: node.field_synopsis
 field_name: field_synopsis
 entity_type: node

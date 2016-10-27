@@ -5,6 +5,8 @@ dependencies:
   module:
     - node
     - options
+_core:
+  default_config_hash: 0FYikzPT9OYpRrtgmhL1J_nIotWZo3f82ss703r_o0U
 id: node.field_rating
 field_name: field_rating
 entity_type: node

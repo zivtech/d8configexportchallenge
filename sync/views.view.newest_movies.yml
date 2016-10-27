@@ -12,6 +12,8 @@ dependencies:
     - options
     - text
     - user
+_core:
+  default_config_hash: unqLSaScd6ZVxQ5v7kTAY-LkCK4pw94tzAC4mJ9XOQA
 id: newest_movies
 label: 'Newest Movies'
 module: views
