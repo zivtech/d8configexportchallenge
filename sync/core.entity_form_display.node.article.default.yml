@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_google_map
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
   module:
     - comment
+    - google_map_field
     - image
     - path
     - text
@@ -39,6 +41,11 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
+  field_google_map:
+    weight: 31
+    settings: {  }
+    third_party_settings: {  }
+    type: google_map_field_default
   field_image:
     type: image_image
     weight: 4

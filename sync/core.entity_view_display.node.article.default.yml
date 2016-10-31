@@ -6,12 +6,14 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_google_map
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - image.style.large
     - node.type.article
   module:
     - comment
+    - google_map_field
     - image
     - text
     - user
@@ -36,6 +38,12 @@ content:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
+  field_google_map:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: google_map_field_default
   field_image:
     type: image
     weight: -1
